@@ -1,8 +1,23 @@
 import "./Invitation.css"; // External CSS for styling
+import hi from "../../../public/Assets/hi.jpg"; // Image path
 
 const Invitation = () => {
   return (
-    <div className="invitation-container">
+    <div
+      className="invitation-container"
+      style={{
+        backgroundImage: `url(${hi})`, // Correct syntax for backgroundImage
+        backgroundSize: "cover", // CamelCase for inline styles
+        backgroundPosition: "center",
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        alignItems: "flex-start",
+        justifyContent: "center",
+        padding: "20px 10px",
+        boxSizing: "border-box",
+      }}
+    >
       <div className="invitation-content">
         <h2>Хайрт Урангүнж танаа!</h2>
         <p>

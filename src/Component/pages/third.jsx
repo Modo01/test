@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import cloud from "../../../public/Assets/cloud.jpg"; // Image path
+import beach from "../../../public/Assets/beach.jpg"; // Image path
+import logo from "../../../public/Assets/logo.jpg"; // Image path
 
 const Third = () => {
   const navigate = useNavigate();
@@ -11,11 +14,11 @@ const Third = () => {
     <div
       style={{
         position: "relative",
-        backgroundImage: `url("/Assets/logo.jpg")`, // Background image
+        backgroundImage: `url(${logo})`, // Background image
         backgroundSize: "cover", // Ensures the background covers the container
         backgroundPosition: "center", // Centers the image
         height: "100vh", // Full viewport height
-        margin: 0, // Remove any default margin
+        width: "100vw", // Full viewport width
         display: "flex", // Flexbox for centering
         flexDirection: "column", // Stack content vertically
         justifyContent: "space-between", // Align elements to top and bottom
@@ -27,7 +30,7 @@ const Third = () => {
       {/* Top Image with Text Overlay */}
       <div style={{ position: "relative", width: "100%" }}>
         <img
-          src="/Assets/cloud.jpg"
+          src={cloud}
           alt="Top Decoration"
           style={{
             width: "100%", // Full width
@@ -56,7 +59,7 @@ const Third = () => {
           style={{
             position: "absolute",
             top: "300px",
-            left: "60%", // Center horizontally
+            left: "60%", // Adjust the position of the clickable area
             width: "100px", // Width of the clickable area
             height: "100px", // Height of the clickable area
             cursor: "pointer",
@@ -67,7 +70,7 @@ const Third = () => {
 
       {/* Bottom Image */}
       <img
-        src="/Assets/beach.jpg"
+        src={beach}
         alt="Bottom Decoration"
         style={{
           width: "100%", // Full width

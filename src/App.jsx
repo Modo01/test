@@ -6,7 +6,7 @@ import Fourth from "./Component/pages/fourth";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/test/">
       <Routes>
         <Route path="/" element={<First />} />
         <Route path="/second" element={<Second />} />

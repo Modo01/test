@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
-
+import space from "../../../public/Assets/space.jpg"; // Image path
+import ocean from "../../../public/Assets/ocean.jpg"; // Image path
+import us from "../../../public/Assets/us.jpg"; // Image path
 const Second = () => {
   const navigate = useNavigate();
 
@@ -10,7 +12,7 @@ const Second = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("/Assets/us.jpg")`, // Background image
+        backgroundImage: `url(${us})`, // Background image
         backgroundSize: "cover", // Ensures the background covers the container
         backgroundPosition: "center", // Centers the image
         height: "100vh", // Full viewport height
@@ -36,7 +38,7 @@ const Second = () => {
       </div>
       {/* Top Image */}
       <img
-        src="/Assets/space.jpg" // Path to top image
+        src={space} // Path to top image
         alt="Top Decoration"
         style={{
           width: "100%", // Full width
@@ -76,7 +78,7 @@ const Second = () => {
 
       {/* Bottom Image */}
       <img
-        src="/Assets/ocean.jpg" // Path to bottom image
+        src={ocean} // Path to bottom image
         alt="Bottom Decoration"
         style={{
           width: "100%", // Full width

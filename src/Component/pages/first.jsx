@@ -1,10 +1,11 @@
 import Envelope from "../envelope/envelope"; // Default import
+import paperImage from "../../../public/Assets/paper.jpg"; // Image path
 
 const First = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("/Assets/paper.jpg")`, // Correct syntax
+        backgroundImage: `url(${paperImage})`,
         backgroundSize: "cover", // Ensures the background covers the container
         backgroundPosition: "center", // Centers the image
         height: "100vh", // Full viewport height
