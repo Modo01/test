@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Envelope.css"; // Updated CSS
+import tom from "../../../public/Assets/tommy.jpg"; // Image path
+import jerry from "../../../public/Assets/jerry.jpg"; // Image path
 
 export function Envelope() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,7 @@ export function Envelope() {
   return (
     <div className="envelope-container">
       <img
-        src="/Assets/tommy.jpg"
+        src={tom}
         alt="Top Decoration"
         className="top-image"
         onClick={navigateToSecond}
@@ -46,7 +48,7 @@ export function Envelope() {
       </div>
 
       <img
-        src="/Assets/jerry.jpg"
+        src={jerry}
         alt="Bottom Decoration"
         className="bottom-image"
         onClick={navigateToThird}
